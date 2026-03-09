@@ -26,6 +26,7 @@ Thumbs.db
 # =========================
 # Notebooks / tooling caches
 # =========================
+chu_DESCRIPTIVA_PRyES_v4.2.ipynb
 .ipynb_checkpoints/
 .pytest_cache/
 .mypy_cache/
