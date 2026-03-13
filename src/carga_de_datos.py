@@ -9,7 +9,7 @@ import os
 nom_fi_datos_temp = 'G09B_2m_temperature.csv'
 nom_fi_datos_irrad = 'G09B_surface_solar_radiation_downwards.csv'
 nom_fi_datos_precip = 'G09B_total_precipitation.csv'
-ruta = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'data')
+ruta = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'DATOS_IMAT_2026')
 
 
 
