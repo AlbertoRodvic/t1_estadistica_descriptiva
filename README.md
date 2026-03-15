@@ -1,4 +1,4 @@
-# Trabajo 1 - Estadistica Descriptiva Meteorologica
+# Trabajo 1 - Estadística Descriptiva Meteorológica
 
 ![Python](https://img.shields.io/badge/Python-3.12%2B-3776AB?logo=python&logoColor=white)
 ![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-F37626?logo=jupyter&logoColor=white)
@@ -9,16 +9,16 @@
 ![SciPy](https://img.shields.io/badge/SciPy-8CAAE6?logo=scipy&logoColor=white)
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
-Analisis exploratorio y estadistica descriptiva de series meteorologicas diarias (2014-2025) en 10 celdas espaciales, organizado por apartados del enunciado y ejecutado en notebooks de Jupyter.
+Análisis exploratorio y estadística descriptiva de series meteorológicas diarias (2014-2025) en 10 celdas espaciales, organizado por apartados del enunciado y ejecutado en notebooks de Jupyter.
 
 ## Resumen Del Proyecto
 
-- Variables analizadas: temperatura a 2 m, irradiacion solar descendente en superficie y precipitacion total.
+- Variables analizadas: temperatura a 2 m, irradiación solar descendente en superficie y precipitación total.
 - Cobertura temporal: 2014-01-01 a 2025-12-31.
-- Resolucion temporal: diaria (4383 filas por variable).
+- Resolución temporal: diaria (4383 filas por variable).
 - Cobertura espacial: 10 celdas (01-10).
 - Material generado: 38 figuras en la carpeta `images`.
-- Flujo de trabajo: carga de datos, analisis por apartados, graficas finales e informe.
+- Flujo de trabajo: carga de datos, análisis por apartados, gráficas finales e informe.
 
 ## Estructura Del Repositorio
 
@@ -36,7 +36,7 @@ Analisis exploratorio y estadistica descriptiva de series meteorologicas diarias
 |   |-- G09B_surface_solar_radiation_downwards.csv
 |   `-- G09B_total_precipitation.csv
 |-- images/
-|   `-- Graficos exportados (1.x, 2.x, 3.x, 4.x y 7.x)
+|   `-- Gráficos exportados (1.x, 2.x, 3.x, 4.x y 7.x)
 |-- documentation/
 |   |-- Informe del trabajo.docx
 |   |-- Informe del trabajo.pdf
@@ -51,7 +51,7 @@ Analisis exploratorio y estadistica descriptiva de series meteorologicas diarias
 
 ## Dataset
 
-Los tres CSV comparten estructura homogenea:
+Los tres CSV comparten estructura homogénea:
 
 - Columna temporal: `FECHA`.
 - 10 columnas de medida por celda (sufijo `CELDA01` a `CELDA10`).
@@ -63,36 +63,36 @@ Los tres CSV comparten estructura homogenea:
 - `G09B_surface_solar_radiation_downwards.csv`: `IRRAD_CELDA01` ... `IRRAD_CELDA10`
 - `G09B_total_precipitation.csv`: `PRECIP_CELDA01` ... `PRECIP_CELDA10`
 
-## Contenido Analitico (Por Apartados)
+## Contenido Analítico (Por Apartados)
 
 ### Apartado 1
 
-- Distribucion de temperatura, irradiacion y precipitacion en celdas 01 y 10.
-- Evolucion por dia de la semana, mes y anno.
-- Comparativa de variabilidad mensual y anual con coeficiente de variacion.
-- Graficos generados: `Gráfico 1.1` a `Gráfico 1.16`.
+- Distribución de temperatura, irradiación y precipitación en celdas 01 y 10.
+- Evolución por día de la semana, mes y año.
+- Comparativa de variabilidad mensual y anual con coeficiente de variación.
+- Gráficos generados: `Gráfico 1.1` a `Gráfico 1.16`.
 
 ### Apartado 2
 
-- Relacion entre temperatura de celdas 01 y 10.
-- Matrices de correlacion y pairplots para temperatura, irradiacion y precipitacion en las 10 celdas.
-- Relacion conjunta entre temperatura, irradiacion y precipitacion en la celda 01.
-- Graficos generados: `Gráfico 2.1`, `2.2`, `2.3` y `7.1` a `7.8`.
+- Relación entre temperatura de celdas 01 y 10.
+- Matrices de correlación y pairplots para temperatura, irradiación y precipitación en las 10 celdas.
+- Relación conjunta entre temperatura, irradiación y precipitación en la celda 01.
+- Gráficos generados: `Gráfico 2.1`, `2.2`, `2.3` y `7.1` a `7.8`.
 
 ### Apartado 3
 
-- Perfil mensual medio y mediano de temperatura e irradiacion (celda 01).
-- Evolucion mensual de deciles (p10-p90) para temperatura e irradiacion.
-- Evolucion anual de deciles de precipitacion, incluyendo escala logaritmica.
-- Identificacion de annos mas secos y mas humedos segun perfil mediano.
-- Graficos generados: `Gráfico 3.1` a `Gráfico 3.6`.
+- Perfil mensual medio y mediano de temperatura e irradiación (celda 01).
+- Evolución mensual de deciles (p10-p90) para temperatura e irradiación.
+- Evolución anual de deciles de precipitación, incluyendo escala logarítmica.
+- Identificación de años más secos y más húmedos según perfil mediano.
+- Gráficos generados: `Gráfico 3.1` a `Gráfico 3.6`.
 
 ### Apartado 4
 
-- Segmentacion de celdas en dos grupos (01-05 y 06-10) basada en correlaciones.
+- Segmentación de celdas en dos grupos (01-05 y 06-10) basada en correlaciones.
 - Series temporales de temperatura media y varianza por grupo.
-- Correlacion mensual entre medias y entre varianzas de ambos grupos.
-- Graficos generados: `Gráfico 4.1` a `Gráfico 4.4` y matriz complementaria `Gráfico 7.9`.
+- Correlación mensual entre medias y entre varianzas de ambos grupos.
+- Gráficos generados: `Gráfico 4.1` a `Gráfico 4.4` y matriz complementaria `Gráfico 7.9`.
 
 ## Entorno Y Dependencias
 
@@ -105,7 +105,7 @@ Dependencias principales:
 - `scipy`
 - `jupyter` / `notebook` / `ipykernel`
 
-Instalacion recomendada:
+Instalación recomendada:
 
 ```bash
 python -m venv .venv
@@ -127,7 +127,7 @@ python -m pip install --upgrade pip
 python -m pip install -r requirements.txt
 ```
 
-## Ejecucion Reproducible
+## Ejecución Reproducible
 
 Orden sugerido para reproducir los resultados:
 
@@ -147,10 +147,10 @@ python -m notebook
 
 - Los notebooks exportan figuras en alta calidad con `dpi=300` y `bbox_inches='tight'`.
 - Los nombres de imagen siguen formato descriptivo (`Gráfico X.Y： ...`).
-- Los apartados en `src` mantienen separacion por objetivo analitico.
+- Los apartados en `src` mantienen separación por objetivo analítico.
 - El script de carga centraliza lectura y parseo de fechas para las 3 magnitudes.
 
-## Documentacion Entregable
+## Documentación Entregable
 
 En `documentation` se incluye:
 
