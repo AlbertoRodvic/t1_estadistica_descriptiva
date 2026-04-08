@@ -1,8 +1,8 @@
 <div align="center">
 
-# Trabajo 1 - Estadistica Descriptiva Meteorologica
+# Trabajo 1 - Estadística Descriptiva Meteorológica
 
-Analisis exploratorio completo de series meteorologicas diarias (2014-2025) en 10 celdas espaciales, desarrollado en Jupyter con enfoque reproducible y documentacion final en DOCX/PDF.
+Análisis exploratorio completo de series meteorológicas diarias (2014-2025) en 10 celdas espaciales, desarrollado en Jupyter con enfoque reproducible y documentación final en DOCX/PDF.
 
 ![Python](https://img.shields.io/badge/Python-3.12%2B-3776AB?logo=python&logoColor=white)
 ![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-F37626?logo=jupyter&logoColor=white)
@@ -17,27 +17,27 @@ Analisis exploratorio completo de series meteorologicas diarias (2014-2025) en 1
 
 ---
 
-## Vision General
+## Visión General
 
 | Aspecto | Detalle |
 |---|---|
-| Dominio | Estadistica descriptiva meteorologica |
-| Variables | Temperatura 2 m, irradiacion solar descendente, precipitacion total |
+| Dominio | Estadística descriptiva meteorológica |
+| Variables | Temperatura 2 m, irradiación solar descendente, precipitación total |
 | Cobertura temporal | 2014-01-01 a 2025-12-31 |
-| Resolucion | Diaria (4383 registros por variable) |
+| Resolución | Diaria (4383 registros por variable) |
 | Cobertura espacial | 10 celdas (CELDA01-CELDA10) |
-| Salida grafica | 37 figuras exportadas en `images/` |
+| Salida gráfica | 37 figuras exportadas en `images/` |
 | Entregables | Notebooks, script de carga, informe final DOCX y PDF |
 
-## Indice
+## Índice
 
 - [Estructura Del Repositorio](#estructura-del-repositorio)
 - [Dataset](#dataset)
-- [Ruta Analitica](#ruta-analitica)
+- [Ruta Analítica](#ruta-analítica)
 - [Puesta En Marcha](#puesta-en-marcha)
-- [Ejecucion Reproducible](#ejecucion-reproducible)
+- [Ejecución Reproducible](#ejecución-reproducible)
 - [Convenciones Del Proyecto](#convenciones-del-proyecto)
-- [Documentacion Entregable](#documentacion-entregable)
+- [Documentación Entregable](#documentación-entregable)
 - [Licencia](#licencia)
 
 ## Estructura Del Repositorio
@@ -56,7 +56,7 @@ Analisis exploratorio completo de series meteorologicas diarias (2014-2025) en 1
 |   |-- G09B_surface_solar_radiation_downwards.csv
 |   `-- G09B_total_precipitation.csv
 |-- images/
-|   `-- Graficos exportados (1.x, 2.x, 3.x, 4.x y 7.x)
+|   `-- Gráficos exportados (1.x, 2.x, 3.x, 4.x y 7.x)
 |-- documentation/
 |   |-- Informe del trabajo.docx
 |   |-- Informe del trabajo.pdf
@@ -71,9 +71,9 @@ Analisis exploratorio completo de series meteorologicas diarias (2014-2025) en 1
 
 ## Dataset
 
-Los tres CSV tienen estructura homogenea y permiten analisis comparables por variable y por celda.
+Los tres CSV tienen estructura homogénea y permiten análisis comparables por variable y por celda.
 
-### Esquema Comun
+### Esquema Común
 
 - Columna temporal: `FECHA`
 - Variables por celda: 10 columnas por magnitud (`CELDA01` a `CELDA10`)
@@ -81,22 +81,22 @@ Los tres CSV tienen estructura homogenea y permiten analisis comparables por var
 
 ### Ficheros
 
-| Archivo | Prefijo De Variables | Descripcion |
+| Archivo | Prefijo de Variables | Descripción |
 |---|---|---|
 | `G09B_2m_temperature.csv` | `TEMP_CELDAxx` | Temperatura a 2 metros |
-| `G09B_surface_solar_radiation_downwards.csv` | `IRRAD_CELDAxx` | Irradiacion solar descendente |
-| `G09B_total_precipitation.csv` | `PRECIP_CELDAxx` | Precipitacion total |
+| `G09B_surface_solar_radiation_downwards.csv` | `IRRAD_CELDAxx` | Irradiación solar descendente |
+| `G09B_total_precipitation.csv` | `PRECIP_CELDAxx` | Precipitación total |
 
-## Ruta Analitica
+## Ruta Analítica
 
-| Apartado | Objetivo Principal | Salida Grafica |
+| Apartado | Objetivo Principal | Salida Gráfica |
 |---|---|---|
-| 1 | Caracterizacion univariante y temporal de celdas 01 y 10 | Graficos 1.1-1.16 |
-| 2 | Correlaciones y relaciones bivariantes/multivariantes | Graficos 2.1-2.3 y 7.1-7.8 |
-| 3 | Perfiles mensuales, deciles y comparativas de anos secos/humedos | Graficos 3.1-3.6 |
-| 4 | Segmentacion de celdas y comparacion entre grupos 01-05 vs 06-10 | Graficos 4.1-4.4 |
+| 1 | Caracterización univariante y temporal de celdas 01 y 10 | Gráficos 1.1-1.16 |
+| 2 | Correlaciones y relaciones bivariantes/multivariantes | Gráficos 2.1-2.3 y 7.1-7.8 |
+| 3 | Perfiles mensuales, deciles y comparativas de años secos/húmedos | Gráficos 3.1-3.6 |
+| 4 | Segmentación de celdas y comparación entre grupos 01-05 vs 06-10 | Gráficos 4.1-4.4 |
 
-## Puesta En Marcha
+## Puesta en Marcha
 
 ### 1) Crear Entorno
 
@@ -125,7 +125,7 @@ python -m pip install --upgrade pip
 python -m pip install -r requirements.txt
 ```
 
-## Ejecucion Reproducible
+## Ejecución Reproducible
 
 Orden recomendado para reconstruir resultados y figuras:
 
@@ -141,14 +141,14 @@ Para abrir el entorno de notebooks:
 python -m notebook
 ```
 
-## Convenciones Del Proyecto
+## Convenciones del Proyecto
 
-- Exportacion de figuras con calidad alta (`dpi=300`, `bbox_inches='tight'`).
-- Nombres de imagen descriptivos siguiendo el formato `Grafico X.Y: Titulo`.
-- Separacion por objetivos analiticos en notebooks independientes.
+- Exportación de figuras con calidad alta (`dpi=300`, `bbox_inches='tight'`).
+- Nombres de imagen descriptivos siguiendo el formato `Gráfico X.Y: Título`.
+- Separación por objetivos analíticos en notebooks independientes.
 - Carga y parseo de fechas centralizados para las tres magnitudes.
 
-## Documentacion Entregable
+## Documentación Entregable
 
 En `documentation/` se incluye:
 
